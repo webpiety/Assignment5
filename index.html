@@ -16,12 +16,45 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font-family -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-    </style>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
 <body>
+    <header class="flex flex-col sm:flex-row justify-between items-center p-4 sm:p-6">
+        <!-- nav bar -->
+        <nav class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mb-4 sm:mb-0">
+            <img class="h-[50px] w-[50px]" src="./assets/logo.png" alt="">
+            <h2 class="font-hind text-[#006747] text-[1.25rem] font-extrabold">Emergency <br> Service</h2>
+        </nav>
+        <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+            <!-- heart -->
+            <div class="flex justify-center items-center gap-2 sm:gap-[6px] py-2 sm:py-[14px] px-4 sm:px-9 rounded-[28px] bg-[#41FF6B1A]">
+                <span class="font-inter text-base font-bold">0</span>
+                <img class="w-6 sm:w-[30px] h-6 sm:h-[30px]" src="./assets/heart.png" alt="">
+            </div>
+            <!-- coin -->
+            <div class="flex justify-center items-center gap-2 sm:gap-[6px] py-2 sm:py-[14px] px-4 sm:px-7 rounded-[28px] bg-[#41FF6B1A]">
+                <span class="font-inter text-base font-bold">100</span>
+                <img class="w-5 sm:w-[30px] h-5 sm:h-[30px]" src="./assets/coin.png" alt="">
+            </div>
+            <!-- copy button -->
+            <div class="bg-[#00A63E] py-[14px] px-9 rounded-[28px]">
+                <button class="font-inter font-semibold text-lg text-white">
+                <span>2</span>
+                <span>Copy</span>
+            </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner -->
+         <section>
+            
+         </section>
+    </main>
 
 </body>
 
