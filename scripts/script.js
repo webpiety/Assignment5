@@ -11,7 +11,7 @@ function ClickCount(id) {
 }
 //function of call history record
 function callHistory(id) {
-const callHistoryContainer = document.getElementById('call-history-container');
+    const callHistoryContainer = document.getElementById('call-history-container');
     callHistoryContainer.innerText = " ";
     for (const callDta of callHistoryData) {
         const div = document.createElement('div');
@@ -31,7 +31,7 @@ const callHistoryContainer = document.getElementById('call-history-container');
 }
 
 // function of copy phone number
-   function copyPhoneNumber(id) {
+function copyPhoneNumber(id) {
     const phoneNumberEl = document.getElementById(id);
     if (!phoneNumberEl) {
         console.error('Element not found with id:', id);
@@ -83,7 +83,6 @@ document.getElementById('heart-railway').addEventListener('click', function () {
 })
 
 // calling when press call button
-// 1
 document.getElementById('emergency-call-button').addEventListener('click', function () {
     const ttlCoin = parseInt(document.getElementById('total-coin').innerText);
 
@@ -110,13 +109,13 @@ document.getElementById('emergency-call-button').addEventListener('click', funct
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
     callHistory('call-history-container');
 })
-// 2
+
 document.getElementById('police-call-button').addEventListener('click', function () {
     const ttlCoin = parseInt(document.getElementById('total-coin').innerText);
 
@@ -143,13 +142,13 @@ document.getElementById('police-call-button').addEventListener('click', function
     }
 
     callHistoryData.unshift(data);
-    if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
     callHistory('call-history-container');
 })
-// 3
+
 document.getElementById('fire-service-call-button').addEventListener('click', function () {
     const ttlCoin = parseInt(document.getElementById('total-coin').innerText);
 
@@ -176,7 +175,7 @@ document.getElementById('fire-service-call-button').addEventListener('click', fu
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
@@ -208,7 +207,7 @@ document.getElementById('Ambulance-call-button').addEventListener('click', funct
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
@@ -240,7 +239,7 @@ document.getElementById('woman-call-button').addEventListener('click', function 
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
@@ -272,7 +271,7 @@ document.getElementById('anti-corruption-call-button').addEventListener('click',
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
@@ -291,7 +290,7 @@ document.getElementById('electricity-call-button').addEventListener('click', fun
         alert("❌ You Don't Have Enough Coins, You Need at Least 20 Coins to Call...");
         return;
     }
-   let time = new Date().toLocaleTimeString('en-US', {
+    let time = new Date().toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: '2-digit',
         second: '2-digit',
@@ -304,12 +303,14 @@ document.getElementById('electricity-call-button').addEventListener('click', fun
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
     callHistory('call-history-container');
 })
+
+
 document.getElementById('brac-call-button').addEventListener('click', function () {
     const ttlCoin = parseInt(document.getElementById('total-coin').innerText);
 
@@ -336,7 +337,7 @@ document.getElementById('brac-call-button').addEventListener('click', function (
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
@@ -368,47 +369,47 @@ document.getElementById('railway-call-button').addEventListener('click', functio
     }
 
     callHistoryData.unshift(data);
-     if(callHistoryData.length >11){
+    if (callHistoryData.length > 11) {
         callHistoryData.pop();
     }
 
     callHistory('call-history-container');
 })
-
-document.getElementById('clear-history-btn').addEventListener('click', function(){
+// Remove Call History
+document.getElementById('clear-history-btn').addEventListener('click', function () {
     const callRecord = document.getElementById('call-history-container');
     callRecord.innerHTML = " ";
     callHistoryData.length = 0;
     return;
-    
+
 
 })
 // Copy Number
-document.getElementById('emergency-copy-btn').addEventListener('click', function() {
-   copyPhoneNumber ('emergency-copy-number');
+document.getElementById('emergency-copy-btn').addEventListener('click', function () {
+    copyPhoneNumber('emergency-copy-number');
 });
-document.getElementById('police-copy-btn').addEventListener('click', function() {
-   copyPhoneNumber ('police-number');
+document.getElementById('police-copy-btn').addEventListener('click', function () {
+    copyPhoneNumber('police-number');
 });
-document.getElementById('fire-service-copy-btn').addEventListener('click', function() {
-   copyPhoneNumber ('fire-service-number');
+document.getElementById('fire-service-copy-btn').addEventListener('click', function () {
+    copyPhoneNumber('fire-service-number');
 });
-document.getElementById('ambulance-copy-btn').addEventListener('click', function() {
-   copyPhoneNumber ('ambulance-number');
+document.getElementById('ambulance-copy-btn').addEventListener('click', function () {
+    copyPhoneNumber('ambulance-number');
 });
-document.getElementById('woman-copy-button').addEventListener('click', function() {
-   copyPhoneNumber ('women-number');
+document.getElementById('woman-copy-button').addEventListener('click', function () {
+    copyPhoneNumber('women-number');
 });
-document.getElementById('anti-corruption-copy-button').addEventListener('click', function() {
-   copyPhoneNumber ('anti-corruption-number');
+document.getElementById('anti-corruption-copy-button').addEventListener('click', function () {
+    copyPhoneNumber('anti-corruption-number');
 });
-document.getElementById('electricity-copy-button').addEventListener('click', function() {
-   copyPhoneNumber ('electricity-number');
+document.getElementById('electricity-copy-button').addEventListener('click', function () {
+    copyPhoneNumber('electricity-number');
 });
-document.getElementById('brac-copy-button').addEventListener('click', function() {
-   copyPhoneNumber ('brac-number');
+document.getElementById('brac-copy-button').addEventListener('click', function () {
+    copyPhoneNumber('brac-number');
 });
-document.getElementById('railway-copy-button').addEventListener('click', function() {
-   copyPhoneNumber ('railway-number');
+document.getElementById('railway-copy-button').addEventListener('click', function () {
+    copyPhoneNumber('railway-number');
 });
 
