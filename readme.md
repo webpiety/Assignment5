@@ -115,6 +115,17 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+Answer 1:
+To manipulate DOM use some selector and all of these have different characteristics. We use this selector at the basis of their output.
+1.	getElementById: it selects only one element by the unique ID and return a single object.
+2.	getElementByClassName: It select elements on the base of class name that means it select many elements where the class name same.  When we console log we see that it returns HTML collection.
+3.	querySelector: it selects the first element and return first element object.
+4.	querySelectorAll: it slect at the basis of mathing CSS selector and return a list of element.
+ 
+ Answer-2:
+First create an element:
+Code: document.createElement("tagName")
+Then insert it to a div by write appendChild().
 
 ---
 

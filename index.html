@@ -23,7 +23,7 @@
         rel="stylesheet">
 
 <body class="bg-[#ecfaed]">
-    <header class="flex justify-between items-center px-8 py-6">
+    <header class="flex flex-col  justify-center sm:justify-between  items-center px-8 py-6 sm:flex-row">
         <!-- nav bar -->
         <div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mb-4 sm:mb-0">
             <img class="h-[50px] w-[50px]" src="./assets/logo.png" alt="">
@@ -31,19 +31,18 @@
         </div>
         <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
             <!-- heart -->
-            <div
-                class="flex justify-center items-center gap-2 sm:gap-[6px] py-2 sm:py-[14px] px-4 sm:px-9 rounded-[28px] bg-[#41FF6B1A]">
+            <div class="w-full flex justify-center items-center gap-2 pt-3 sm:w-auto sm:gap-[6px] py-2 sm:py-[14px] px-4 sm:px-9 rounded-[28px] bg-[#41FF6B1A]">
                 <span id="heart-click" class="font-inter text-base font-bold">0</span>
                 <img class="w-6 sm:w-[30px] h-6 sm:h-[30px]" src="./assets/heart.png" alt="">
             </div>
             <!-- coin -->
             <div
-                class="flex justify-center items-center gap-2 sm:gap-[6px] py-2 sm:py-[14px] px-4 sm:px-7 rounded-[28px] bg-[#41FF6B1A]">
+                class="w-full flex justify-center items-center gap-2 pt-3 sm:w-auto sm:gap-[6px] py-2 sm:py-[14px] px-4 sm:px-7 rounded-[28px] bg-[#41FF6B1A]">
                 <span id="total-coin" class="font-inter text-base font-bold">100</span>
                 <img class="w-5 sm:w-[30px] h-5 sm:h-[30px]" src="./assets/coin.png" alt="">
             </div>
             <!-- copy button -->
-            <div class="bg-[#00A63E] py-[14px] px-9 rounded-[28px]">
+            <div class="bg-[#00A63E] w-full pt-3 sm:w-auto py-[14px] px-9 rounded-[28px]">
                 <button class="font-inter font-semibold text-lg text-white">
                     <span>2</span>
                     <span>Copy</span>
@@ -53,8 +52,7 @@
     </header>
     <main>
         <!-- banner -->
-        <section
-            class="bg-gradient-to-r from-[#013223] via-[#037a56] to-[#013223] flex justify-center items-center  py-[21px]">
+        <section class="bg-gradient-to-r from-[#013223] via-[#037a56] to-[#013223] mx-auto flex justify-center items-center px-[30px] py-[21px] sm:justify-center sm:items-center  sm:py-[21px]">
             <div class="text-center">
                 <div class="flex justify-center items-center">
                     <img class="h-[10%] w-[10%]" src="./assets/logo-dark.png" alt="">
@@ -67,8 +65,8 @@
         </section>
         <!-- card section -->
         <section>
-            <div class="flex gap-4 px-8 py-10">
-                <div class="w-9/12 grid grid-cols-3 gap-4">
+            <div class="flex flex-col sm:flex-row gap-4 px-8  py-10 sm:px-8 sm:py-10">
+                <div class="mx-auto sm:w-9/12 grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <!-- card-1 -->
 
                     <div class="bg-white p-7 rounded-3xl shadow-sm">
@@ -104,18 +102,18 @@
 
                      <div class="bg-white p-7 rounded-3xl shadow-sm">
                         <div class="flex justify-between items-center mb-4 ">
-                            <img class="h-[60px] w-[60px]" src="./assets/emergency.png" alt="">
+                            <img class="h-[60px] w-[60px]" src="./assets/police.png" alt="">
                             <i id="heart-police" class="fa-regular fa-heart"></i>
                         </div>
                         <div class="mb-6">
-                            <h3 class="font-hind text-xl font-bold text-[#111111]">National Emergency Number</h3>
-                            <p class="font-hind text-base font-normal text-[#5C5C5C]">National Emergency</p>
+                            <h3 class="font-hind text-xl font-bold text-[#111111]">Police Helpline Number</h3>
+                            <p class="font-hind text-base font-normal text-[#5C5C5C]">Police</p>
                         </div>
                         <div>
                             <h2 id="police-number" class="text-3xl font-bold text-[#111111] mb-1">999</h2>
                             <div class="flex">
                                 <p class="font-hind text-sm text-[#5C5C5C] bg-[#F2F2F2] py-[8px] px-4 rounded-3xl">
-                                    All
+                                    Police
                                 </p>
                             </div>
                         </div>
@@ -135,18 +133,18 @@
 
                      <div class="bg-white p-7 rounded-3xl shadow-sm">
                         <div class="flex justify-between items-center mb-4 ">
-                            <img class="h-[60px] w-[60px]" src="./assets/emergency.png" alt="">
+                            <img class="h-[60px] w-[60px]" src="./assets/fire-service.png" alt="">
                             <i id="heart-fire" class="fa-regular fa-heart"></i>
                         </div>
                         <div class="mb-6">
-                            <h3 class="font-hind text-xl font-bold text-[#111111]">National Emergency Number</h3>
-                            <p class="font-hind text-base font-normal text-[#5C5C5C]">National Emergency</p>
+                            <h3 class="font-hind text-xl font-bold text-[#111111]">Fire Service Number</h3>
+                            <p class="font-hind text-base font-normal text-[#5C5C5C]">Fire Service</p>
                         </div>
                         <div>
                             <h2 id="fire-service-number" class="text-3xl font-bold text-[#111111] mb-1">999</h2>
                             <div class="flex">
                                 <p class="font-hind text-sm text-[#5C5C5C] bg-[#F2F2F2] py-[8px] px-4 rounded-3xl">
-                                    All
+                                    Fire
                                 </p>
                             </div>
                         </div>
@@ -346,8 +344,8 @@
 
                 </div>
                 <!-- call history -->
-                <div id="main-Call-History-Container" class="bg-white shadow-sm h-[1160px] w-3/12 rounded-3xl p-6">
-                    <div class="flex justify-between items-center">
+                <div id="main-Call-History-Container" class="bg-white shadow-sm h-[1160px] sm:w-3/12 rounded-3xl sm:p-6">
+                    <div class="flex justify-between items-center pt-5 p-3 sm:p-1">
                         <div>
                             <h3 class="text-xl font-semibold text-[#111111]"><i class="mr-2 fa-regular fa-clock"></i>Call History</h3>
                         </div>
