@@ -1,4 +1,5 @@
 let count = 0;
+let copyClickCount = 0;
 const callHistoryData = [];
 
 // Function of counting heart click
@@ -50,7 +51,14 @@ function copyPhoneNumber(id) {
         });
 }
 
+// Function of copy button click
 
+function ClickCount(id) {
+    copyClickCount++;
+    const ttlCopyClickCount = document.getElementById('copy-phone-number-count');
+    ttlCopyClickCount.innerText = copyClickCount;
+    return ttlCopyClickCount;
+}
 
 // click event when click heart in any card
 document.getElementById('heart-emergency').addEventListener('click', function () {
@@ -412,4 +420,44 @@ document.getElementById('brac-copy-button').addEventListener('click', function (
 document.getElementById('railway-copy-button').addEventListener('click', function () {
     copyPhoneNumber('railway-number');
 });
+
+// Number of times copy button click
+
+document.getElementById('emergency-copy-btn').addEventListener('click', function () {
+    ClickCount('emergency-copy-btn');
+
+})
+document.getElementById('police-copy-btn').addEventListener('click', function () {
+    ClickCount('police-copy-btn');
+
+})
+document.getElementById('fire-service-copy-btn').addEventListener('click', function () {
+    ClickCount('fire-service-copy-btn');
+
+})
+
+document.getElementById('ambulance-copy-btn').addEventListener('click', function () {
+    ClickCount('ambulance-copy-btn');
+
+})
+document.getElementById('woman-copy-button').addEventListener('click', function () {
+    ClickCount('woman-copy-button');
+
+})
+document.getElementById('anti-corruption-copy-button').addEventListener('click', function () {
+    ClickCount('anti-corruption-copy-button');
+
+})
+document.getElementById('electricity-copy-button').addEventListener('click', function () {
+    ClickCount('electricity-copy-button');
+
+})
+document.getElementById('brac-copy-button').addEventListener('click', function () {
+    ClickCount('brac-copy-button');
+
+})
+document.getElementById('railway-copy-button').addEventListener('click', function () {
+    ClickCount('railway-copy-button');
+
+})
 
